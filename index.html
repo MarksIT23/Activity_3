@@ -1,23 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: rgb(42, 32, 76);">
+<html lang="en" style="background-color: rgba(144, 127, 199, 0.616);">
 <head>
 
 
-<title>Login</title>
-<h1 style="text-align: center;">Login</h1>
+<title class="redText">Login</title>
+<h1>Login</h1>
+
+<style>
+    #divContainer 
+    {
+        text-align: left;
+    }
+
+    .redText 
+    {
+        color: red;
+        background-color: bisque;
+    }
+
+    .redText:hover 
+    {
+        color: blue;
+    }
+
+    input 
+    {
+        text-align: center;
+    }
+
+    #btnLogin:hover
+    {
+        
+        cursor: pointer;
+        font-size: large;
+        color: aqua;
+    }
+
+</style>
 
 </head>
 
 <body>
 
-    <div style="text-align: center;">
+    <div>
 
-        <input type="text" placeholder="Username" id="txtUsername" onchange="alert(this.value)">
+        <input type="text" placeholder="Username" id="txtUsername" class="redText">
         <br><br>
-        <input type="text" placeholder="Password" id="txtPassowrd">
+        <input type="text" placeholder="Password" id="txtPassowrd" class="redText">
 
         <div style="margin-top: 1rem;">
-
 
             <button id="btnLogin">Login</button>
 
@@ -33,7 +64,7 @@
     let buttonLogin = document.querySelector('#btnLogin');
     buttonLogin.onclick = function() 
     {
-        alert("Login Success!")
+        alert("Hello")
     };
 
     </script>
